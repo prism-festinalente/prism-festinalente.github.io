@@ -341,8 +341,27 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+            Proactive agents must decide not only <em>what</em> to say but also <em>whether and when</em> to intervene. 
+            Many current systems rely on brittle heuristics or indiscriminate long reasoning, which offers little control 
+            over the benefit-burden tradeoff. We formulate the problem as cost-sensitive selective intervention and present 
+            <span style="font-variant: small-caps;">PRISM</span>, a novel framework that couples a decision-theoretic gate 
+            with a dual-process reasoning architecture. At inference time, the agent intervenes only when a calibrated 
+            probability of user acceptance exceeds a threshold derived from asymmetric costs of missed help and false alarms. 
+            Inspired by <em>festina lente</em> (Latin: “make haste slowly”), we gate by an acceptance-calibrated, 
+            cost-derived threshold and invoke a resource-intensive <em>Slow</em> mode with counterfactual checks only near 
+            the decision boundary, concentrating computation on ambiguous and high-stakes cases. Training uses 
+            <em>gate-aligned, schema-locked distillation</em>: a teacher running the full 
+            <span style="font-variant: small-caps;">PRISM</span> pipeline provides dense, executable supervision on 
+            unlabeled interaction traces, while the student learns a response policy that is 
+            <em>explicitly decoupled</em> from the intervention gate to enable tunable and auditable control. On 
+            <span style="font-variant: small-caps;">ProactiveBench</span>, 
+            <span style="font-variant: small-caps;">PRISM</span> reduces false alarms by <strong>22.78%</strong> and 
+            improves F1 by <strong>20.14%</strong> over strong baselines. These results show that principled 
+            decision-theoretic gating, paired with selective slow reasoning and aligned distillation, yields proactive 
+            agents that are precise, computationally efficient, and controllable. To ensure reproducibility, we will 
+            open-source code and models upon acceptance; all experiments use the open-source 
+            <span style="font-variant: small-caps;">ProactiveBench</span> benchmark.
+                    </p>
         </div>
       </div>
     </div>
